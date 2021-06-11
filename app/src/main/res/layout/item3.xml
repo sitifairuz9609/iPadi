@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/free"/>
+
+        <TextView
+            android:id="@+id/percumacuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Hak Sendiri"
+            android:textColor="@android:color/holo_orange_dark"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/jenisaktiviticuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percumacuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Penyediaan ladang padi"
+            android:fontFamily="@font/comfortaa"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/aktiviticuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenisaktiviticuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Pembakaran jerami padi"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/itemcuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aktiviticuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Baja"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/kuantiticuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="2"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/ukurancuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemcuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/kuantiticuma"
+            android:text="tan"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/hargacuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kuantiticuma"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:fontFamily="@font/comfortaa"
+            android:text="RM 30.00"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_toEndOf="@+id/percumacuma"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

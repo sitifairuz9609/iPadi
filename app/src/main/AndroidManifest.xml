@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.i_padi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IPadi">
+        <activity android:name=".InovasiActivity"></activity>
+        <activity android:name=".MoneyActivity" />
+        <activity android:name=".DuitActivity" />
+        <activity android:name=".PaparPercumaActivity" />
+        <activity android:name=".RetrievePercumaActivity" />
+        <activity android:name=".PadiActivity" />
+        <activity android:name=".RetrievePerbelanjaanActivity" />
+        <activity android:name=".PaparPerbelanjaanActivity" />
+        <activity android:name=".PaparPendapatanActivity" />
+        <activity android:name=".RetrievePendapatanActivity" />
+        <activity android:name=".PercumaActivity" />
+        <activity android:name=".PerbelanjaanActivity" />
+        <activity android:name=".PendapatanActivity" />
+        <activity android:name=".AktivitiActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF018786</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#11CFC5</color>
+    <color name="themeColor">#11CFC5</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#11CFC5</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+    <color name="Blue">#FFF</color>
+    <color name="colorPrimary1">#F73D0F</color>
+    <color name="colorPrimaryDark1">#F73D0F</color>
+    <color name="colorAccent1">#ff0000</color>
+    <color name="oren">#FF4500</color>
+    <color name="greenery">#32cd32</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#C84127</color>
+    <color name="gradEnd">#FFFFFFFF</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="cardColor1">#FEADB9</color>
+</resources>

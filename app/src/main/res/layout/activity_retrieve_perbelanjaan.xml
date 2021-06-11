@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/biru"
+    android:orientation="vertical"
+    tools:context=".RetrievePerbelanjaanActivity">
+
+    <Spinner
+        android:id="@+id/perbelanjaanbelanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:entries="@array/Perbelanjaan" />
+
+    <Spinner
+        android:id="@+id/jenisaktivitibelanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:entries="@array/Aktiviti"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/aktivitibelanja"
+            style="@style/modifiedEditText"
+            android:hint="Aktiviti yang dijalankan"
+            android:maxLines="1"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/teal_700"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        style="@style/parent"
+        android:layout_marginTop="@dimen/loginViewsMargin">
+        <EditText
+            android:id="@+id/itembelanja"
+            style="@style/modifiedEditText"
+            android:hint="Item yang digunakan"
+            android:maxLines="1"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/teal_700"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="100dp"
+            android:layout_marginBottom="15dp"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/kuantitibelanja"
+                style="@style/modifiedEditText"
+                android:hint="Kuantiti"
+                android:inputType="number"
+                android:maxLines="1"
+                android:fontFamily="@font/comfortaa"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp"
+                android:backgroundTint="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Spinner
+            android:id="@+id/ukuranbelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:entries="@array/PengukuranTambahan">
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputhargapendapatan"
+            style="@style/parent"
+            android:layout_width="100dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/hargabelanja"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/comfortaa"
+                android:hint="Harga"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/simpan"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Simpan"
+        android:fontFamily="@font/comfortaa"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:fabSize="normal">
+
+        </ImageButton>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

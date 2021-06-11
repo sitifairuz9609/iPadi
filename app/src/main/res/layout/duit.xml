@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edmt.dev.androidgridlayout.MainActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:weightSum="12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/comfortaa"
+                android:text="Paparan Harga"
+                android:textColor="@android:color/white"
+                android:textSize="34sp" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="1"
+            android:layout_marginTop="-90dp"
+            android:rowCount="12"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="14dp"
+            >
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="321dp"
+                android:layout_height="6dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/income" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Penjualan Padi:"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-55dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/penjualanpadi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="28dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/income" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Pendapatan Lain:"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-66dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pendapatanlain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="127dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="29dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/free" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Hak Sendiri:"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-45dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Haksendiri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="109dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/free" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Buat Sendiri:"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-45dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Buatsendiri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="109dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="29dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/free" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Subsidi:"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-25dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Subsidi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="45dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/expenses" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Operasi:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-30dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Operasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/expenses" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Upah:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Upah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="50dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/expenses" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Sewa:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Sewa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="50dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/expenses" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Perbelanjaan Lain:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-71dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/perbelanjaanlain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="127dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="22dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/income" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Jumlah Pendapatan:"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-78dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jumlahpendapatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="127dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/expenses" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Jumlah Perbelanjaan:"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-79dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jumlahperbelanjaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="127dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="15dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="120dp"
+                        android:src="@drawable/free" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-30dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="Jumlah Percuma:"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="-65dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="RM"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jumlahpercuma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="125dp"
+                        android:layout_marginTop="-24dp"
+                        android:layout_marginRight="26dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="20.00"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

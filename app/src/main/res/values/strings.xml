@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">i-Padi</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string-array name="Perbelanjaan">
+        <item>Upah</item>
+        <item>Operasi</item>
+        <item>Sewa</item>
+        <item>Perbelanjaan Lain</item>
+    </string-array>
+    <string-array name="Pendapatan">
+        <item>Penjualan Padi</item>
+        <item>Pendapatan Lain</item>
+    </string-array>
+    <string-array name="Percuma">
+        <item>Hak Sendiri</item>
+        <item>Buat Sendiri</item>
+        <item>Subsidi</item>
+    </string-array>
+    <string-array name="Aktiviti">
+        <item>Penyediaan ladang padi</item>
+        <item>Penanaman benih padi</item>
+        <item>Pertumbuhan dan penjagaan padi</item>
+        <item>Penuaian padi</item>
+        <item>Penjualan padi</item>
+    </string-array>
+    <string-array name="AktivitiIkan">
+        <item>Aktiviti penjualan lain</item>
+    </string-array>
+    <string-array name="AktivitiJualann">
+        <item>Aktiviti penjualan padi</item>
+    </string-array>
+    <string-array name="AktivitiSemua">
+        <item>Pembakaran jerami padi</item>
+        <item>Menyiram baja</item>
+        <item>Pembersihan sempadan, longkang, dan sistem</item>
+        <item>Meratakan tanah</item>
+        <item>Penghapusan rumpai</item>
+        <item>Membajak ladang</item>
+        <item>Penghantaran baja</item>
+        <item>Menyemai benih padi</item>
+        <item>Penanaman benih matang</item>
+        <item>Penggunaan racun tikus, siput, rumpai, serangga dan kutu</item>
+        <item>Penghantaran baja</item>
+        <item>Penuaian padi</item>
+        <item>Penghantaran padi untuk dijual</item>
+        <item>Hasil padi</item>
+    </string-array>
+    <string-array name="ItemSemua">
+        <item>Bahan api untuk jentera traktor</item>
+        <item>Bahan api untuk lori</item>
+        <item>Bahan api untuk kenderaan/motor</item>
+        <item>Bahan api untuk mesin penyiraman baja</item>
+        <item>Bahan api untuk mesin semburan racun rumpai kimia</item>
+        <item>Bahan api untuk mesin semburan racun siput dan tikus</item>
+        <item>Mesin semburan racun rumpai kimia</item>
+        <item>Bahan api untuk pam air</item>
+        <item>Baja</item>
+        <item>Racun rumpai kimia</item>
+        <item>Racun siput</item>
+        <item>Racun tikus</item>
+        <item>Benih padi</item>
+        <item>Lori</item>
+        <item>Mesin penanaman benih</item>
+        <item>Mesin penuaian padi</item>
+        <item>Mesin penyiraman baja</item>
+        <item>Mesin semburan racun rumpai kimia</item>
+        <item>Mesin potong rumput</item>
+        <item>Pam air</item>
+        <item>Sawah</item>
+        <item>Traktor</item>
+        <item>Pekerja</item>
+    </string-array>
+    <string-array name="Aktivitiupah">
+        <item>Pembakaran jerami padi</item>
+        <item>Menyiram baja</item>
+        <item>Pembersihan sempadan, longkang, dan sistem</item>
+        <item>Meratakan tanah</item>
+        <item>Penghapusan rumpai</item>
+        <item>Membajak ladang</item>
+        <item>Penghantaran baja</item>
+        <item>Menyemai benih padi</item>
+        <item>Penanaman benih matang</item>
+        <item>Penggunaan racun tikus, siput, rumpai, serangga dan kutu</item>
+        <item>Penghantaran baja</item>
+        <item>Penuaian padi</item>
+        <item>Penghantaran padi untuk dijual</item>
+    </string-array>
+    <string-array name="AktivitiBuatSendiri">
+        <item>Pembakaran jerami padi</item>
+        <item>Menyiram baja</item>
+        <item>Pembersihan sempadan, longkang, dan sistem</item>
+        <item>Meratakan tanah</item>
+        <item>Penghapusan rumpai</item>
+        <item>Membajak ladang</item>
+        <item>Penghantaran baja</item>
+        <item>Menyemai benih padi</item>
+        <item>Penanaman benih matang</item>
+        <item>Penggunaan racun tikus, siput, rumpai, serangga dan kutu</item>
+        <item>Penghantaran baja</item>
+        <item>Penuaian padi</item>
+        <item>Penghantaran padi untuk dijual</item>
+    </string-array>
+    <array name="AktivitiJualan">
+        <item>Hasil Padi</item>
+    </array>
+    <string-array name="ItemOperasi">
+        <item>Bahan api untuk jentera traktor</item>
+        <item>Bahan api untuk lori</item>
+        <item>Bahan api untuk kenderaan/motor</item>
+        <item>Bahan api untuk mesin penyiraman baja</item>
+        <item>Bahan api untuk mesin semburan racun rumpai kimia</item>
+        <item>Bahan api untuk mesin semburan racun siput dan tikus</item>
+        <item>Mesin semburan racun rumpai kimia</item>
+        <item>Bahan api untuk pam air</item>
+        <item>Baja</item>
+        <item>Racun rumpai kimia</item>
+        <item>Racun siput</item>
+        <item>Racun tikus</item>
+        <item>Benih padi</item>
+    </string-array>
+    <string-array name="ItemSewa">
+        <item>Lori</item>
+        <item>Mesin penanaman benih</item>
+        <item>Mesin penuaian padi</item>
+        <item>Mesin penyiraman baja</item>
+        <item>Mesin semburan racun rumpai kimia</item>
+        <item>Mesin potong rumput</item>
+        <item>Pam air</item>
+        <item>Sawah</item>
+        <item>Traktor</item>
+    </string-array>
+    <string-array name="ItemUpah">
+        <item>Pekerja</item>
+    </string-array>
+    <string-array name="ItemJualan">
+        <item>Padi</item>
+    </string-array>
+    <string-array name="ItemSubsidi">
+        <item>Baja</item>
+        <item>Benih padi</item>
+        <item>Racun rumpai laut</item>
+        <item>Racun siput</item>
+        <item>Racun tikus</item>
+        <item>Mesin potong rumput</item>
+        <item>Pam air</item>
+        <item>Sawah</item>
+    </string-array>
+    <string-array name="ItemHakMilik">
+        <item>Lori</item>
+        <item>Mesin penanaman benih</item>
+        <item>Mesin penuaian padi</item>
+        <item>Mesin penyiraman baja</item>
+        <item>Mesin semburan racun rumpai kimia</item>
+        <item>Mesin potong rumput</item>
+        <item>Mesin potong rumput</item>
+        <item>Pam air</item>
+        <item>Sawah</item>
+        <item>Traktor</item>
+    </string-array>
+    <string-array name="ItemBuatSendiri">
+        <item>Pekerja</item>
+    </string-array>
+    <string-array name="PengukuranOperasi">
+        <item>Liter</item>
+        <item>Beg</item>
+        <item>Kg</item>
+        <item>Milliliter</item>
+    </string-array>
+    <string-array name="PengukuranSewa">
+        <item>Unit</item>
+    </string-array>
+    <array name="PengukuranUpah">
+        <item>Hari</item>
+        <item>Jam</item>
+        <item>Orang</item>
+        <item>Relong</item>
+        <item>Ekar</item>
+    </array>
+    <string-array name="PengukuranSubsidi">
+        <item>Liter</item>
+        <item>Beg</item>
+        <item>Kg</item>
+        <item>Milliliter</item>
+    </string-array>
+    <string-array name="PengukuranHakMilik">
+        <item>Unit</item>
+        <item>Relong</item>
+        <item>Ekar</item>
+    </string-array>
+    <string-array name="PengukuranBuatSendiri">
+        <item>Orang</item>
+        <item>Relong</item>
+        <item>Hari</item>
+        <item>Jam</item>
+        <item>Ekar</item>
+    </string-array>
+    <string-array name="PengukuranJualan">
+        <item>Tan</item>
+        <item>Kg</item>
+    </string-array>
+    <string-array name="PengukuranTambahan">
+        <item>Orang</item>
+        <item>Relong</item>
+        <item>Hari</item>
+        <item>Jam</item>
+        <item>Ekar</item>
+        <item>Unit</item>
+        <item>Liter</item>
+        <item>Beg</item>
+        <item>Botol</item>
+        <item>Kg</item>
+        <item>Milliliter</item>
+    </string-array>
+    <string-array name="Paparan">
+        <item>Sila pilih aliran tunai</item>
+        <item>Pendapatan</item>
+        <item>Perbelanjaan</item>
+        <item>Percuma</item>
+    </string-array>
+</resources>

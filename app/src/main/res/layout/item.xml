@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/income"/>
+
+        <TextView
+            android:id="@+id/pendapatandapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Penjualan Hasil Padi"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/jenisaktivitidapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pendapatandapat"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Penjualan hasil padi"
+            android:fontFamily="@font/comfortaa"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/aktivitidapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jenisaktivitidapat"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="Hasil padi"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/itemdapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aktivitidapat"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:fontFamily="@font/comfortaa"
+            android:text="Padi"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/kuantitidapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemdapat"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="2"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/ukurandapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemdapat"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/kuantitidapat"
+            android:text="tan"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextView
+            android:id="@+id/hargadapat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kuantitidapat"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:fontFamily="@font/comfortaa"
+            android:text="RM 30.00"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_toEndOf="@+id/pendapatandapat"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

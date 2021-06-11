@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".PadiActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rice"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/pengenalanpadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:paddingLeft="100dp"
+        android:layout_gravity="center"
+        android:text="Pengenalan Pengguna"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/caratanamanpadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Cara Tanaman Padi"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/taburterus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-25dp"
+        android:text="Teknik Tabur Terus"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/jenispadi"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Jenis Padi"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/MR219"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="MR219"
+        android:padding="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/MR220L"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MR220L"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/pekerjaanutama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:textStyle="bold"
+        android:text="Adakah menanam padi pekerjaan utama?"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/ya"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Ya"
+        android:padding="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <RadioButton
+        android:id="@+id/tidak"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+    <EditText
+        android:id="@+id/hasilkg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Anggaran hasil jualan (dalam KG)"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+
+    <EditText
+        android:id="@+id/hasilrm"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:hint="Anggaran hasil jualan (dalam RM)"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+    <EditText
+        android:id="@+id/luasrelong"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Keluasan sawah (dalam relong)"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+    <EditText
+        android:id="@+id/luasekar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Keluasan sawah (dalam ekar)"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="@color/black"
+        android:textSize="10dp"/>
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/simpanpadi"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Simpan"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/back"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Kembali ke Menu "
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:background="@drawable/biru"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/website_logo_transparent_background" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditText"
+                    android:hint="Emel"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:fontFamily="@font/comfortaa"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="Katalaluan"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:fontFamily="@font/comfortaa"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/white"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/cirLoginButton"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Login"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+            <TextView
+                android:id="@+id/btn_daftar"
+                style="@style/parent"
+                android:layout_width="445dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:fontFamily="@font/comfortaa"
+                android:onClick="onLoginClick"
+                android:layout_marginLeft="0dp"
+                android:text="Anda pengguna baru? Sila daftar sekarang."
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:ignore="OnClick" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="12">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimaryDark" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

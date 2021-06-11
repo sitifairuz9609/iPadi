@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_homebg">
+
+    <include
+        layout="@layout/toolbarcartabelanja"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Jumlah Harga Keseluruhan"
+        style="Italic"
+        android:textColor="@color/white"
+        android:fontFamily="@font/comfortaa"
+        android:gravity="center_horizontal"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="10dp">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:background="@color/teal_700">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="No."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Aliran Tunai"
+                android:textColor="@color/white"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Jumlah Harga (RM)"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Penjualan Padi"
+                android:fontFamily="@font/comfortaa"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:fontFamily="@font/comfortaa"
+                android:id="@+id/penjualanpadi"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:fontFamily="@font/comfortaa"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:padding="2sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:fontFamily="@font/comfortaa"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan lain"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textColor="@color/teal_700"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/pendapatanlain"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hak Sendiri"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Haksendiri"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow
+            android:background="@color/white">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="4."
+                android:textColor="@color/teal_700"
+                android:textSize="12sp" />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Buat Sendiri"
+                android:textColor="@color/teal_700"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:id="@+id/Buatsendiri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Subsidi"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/Subsidi"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Operasi"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textColor="@color/teal_700"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/Operasi"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Upah"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Upah"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow
+            android:background="@color/white">
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="8"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp" />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sewa"
+                android:textColor="@color/teal_700"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:id="@+id/Sewa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Perbelanjaan Lain"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/perbelanjaanlain"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Pendapatan"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/jumlahpendapatan"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Perbelanjaan"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textColor="@color/teal_700"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:id="@+id/jumlahperbelanjaan"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textColor="@color/teal_700"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Percuma"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/jumlahpercuma"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textColor="@color/teal_700"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/simpan"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Simpan data"
+        android:fontFamily="@font/comfortaa">
+    </br.com.simplepass.loading_button_lib.customViews.CircularProgressButton>
+</LinearLayout>
